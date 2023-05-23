@@ -1,0 +1,302 @@
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    z-index: 10;
+    padding: 20px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+	border-bottom: double white 1px;
+	/*border-radius:30px;*/
+	background-color:rgba(0,0,0,0.5);
+}
+.nav-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand {
+	font-family:"宋体";
+    font-size: 30px;
+    font-weight: bold;
+	height:30px;
+	color:#FFF;
+}
+
+.navbar-brandE {
+	font-family:"Times New Roman";
+    font-size: 15px;
+	font-weight:700;
+	/*color:#FFF;*/
+	text-align: center;
+}
+.font-special {
+    font-family: 宋体, 新宋体, sans-serif;
+    height: 0;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    font-weight: 400;
+    margin-left: 15px;
+    transition: all .5s linear;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+header ul li:hover {
+    background: #497271;
+    color: #2b1055;
+}
+
+header ul li.active {
+    background:#497271;
+    color: #2b1055;
+}
+a:link,a:visited{
+	color:#FFF;
+	text-decoration:none;
+}
+
+
+
+
+
+html {
+    position: relative;
+    overflow: hidden !important;
+  }
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding:0;
+    margin:0;
+
+  }
+.bg{
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    
+    position: absolute;
+    z-index: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background{
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-image: url("img3/background1.png");
+    position: absolute;
+    z-index: -5;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background2{
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-image: url("img3/background3.png");
+    position: absolute;
+    z-index: -4;
+}
+.yinghua{
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-image: url("img/yinghua.png");
+    position: absolute;
+    z-index: -1;
+}
+
+@media screen and (max-width : 768px) {
+	.background {
+		background-size:cover;
+	}
+    .background2 {
+		background-size:cover;
+	}
+} 
+@media screen and (max-width : 1000px) {
+	.background {
+		background-size:130%;
+	}
+    .background2 {
+		background-size:130%;
+	}
+} 
+@media screen and (max-width : 2333333px) {
+	.background {
+		background-size:130%;
+	}
+    .background2 {
+		background-size:130%;
+	}
+} 
+
+
+.profileCard{
+    
+    
+    z-index: 0;
+
+}
+.logo1{
+
+    margin: auto;
+    margin-top: -100px;
+    width: 200px;
+    height: 200px;
+    /*background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #ffffff;
+    */
+}
+.logo2{
+    width: 180px;
+    height: 180px;
+    margin: 5px 5px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.9);
+    transition: all 1s;
+    /*box-shadow: 0px 0px 10px #ffffff;*/
+}
+
+.logo2:hover{
+    transform: rotate(360deg);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 1);
+
+    transition: all 1s;
+    /*box-shadow: 0px 0px 10px #ffffff;*/
+}
+
+.name{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0px 0px 12px white;
+    transition: all 0.5s;
+}
+.name:hover{
+    text-shadow: 0px 0px 30px white;
+
+    transition: all 0.5s;
+}
+
+.slogan{
+    margin: auto;
+    width: 600px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    text-shadow: 0px 0px 12px #ffffff;
+    box-shadow: 0px 0px 12px #ffffff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.slogan:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 25px #ffffff;
+    transition: all 0.5s;
+}
+
+.slogan2{
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    max-width: 500px;
+}
+
+.buttons{
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button1{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 50px;
+    width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.button1:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    
+    color: #ffffff;
+    box-shadow: 0px 0px 12px #ffffff;
+    transition: all 0.5s;
+
+}
+
+.lihui{
+    position: fixed;
+    background-image: url("img3/lihui.texb");
+    width: 700px;
+    height: 700px;
+    left: -100px;
+    bottom: 0;
+    background-size: cover;
+    z-index: -2;
+}
+
+.footer{
+    position: absolute;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    color:rgba(255, 255, 255, 0.8);
+    font-size: 10px;
+}
+
+.footer2{
+    text-align: center;
+}
+
+a{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* 背景音乐css */
+audio{position: fixed;
+    top: 560px;
+    left: 0px;
+    }
+    

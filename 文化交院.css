@@ -1,0 +1,150 @@
+
+body{
+	/* 背景 */
+    background-position: center;
+    background: url(./img/huanghe2.jpg) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -o-background-size: cover;                
+                background-size: cover;
+}
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+	height: 80px;
+    z-index: 10;
+    padding: 20px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+	border-bottom: double white 1px;
+	/*border-radius:30px;*/
+	background-color:rgba(0,0,0,0.5);
+}
+.nav-header {
+    display: flex;
+    flex-direction: column;
+}
+.navbar-brand {
+	font-family:"宋体";
+    font-size: 30px;
+    font-weight: bold;
+	height:30px;
+	color:#FFF;
+	height: 0px;
+}
+
+.navbar-brandE {
+	font-family:"Times New Roman";
+    font-size: 15px;
+	font-weight:700;
+	/*color:#FFF;*/
+	text-align: center;
+}
+.font-special {
+    font-family: 宋体, 新宋体, sans-serif;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    font-weight: 400;
+    margin-left: 15px;
+    transition: all .5s linear;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+header ul li:hover {
+    background: #497271;
+    color: #2b1055;
+}
+
+header ul li.active {
+    background:#497271;
+    color: #2b1055;
+}
+a:link,a:visited{
+	color:#FFF;
+	text-decoration:none;
+}
+
+
+
+/* 卡片的css */
+.container{
+    position: fixed;
+    top: 120px;
+    left: 20px;
+	width:1200px;
+	display:flex;
+	align-items:center;
+	padding:30px;
+	border-radius:10px;
+}
+.card{
+	position:relative;
+	width:500px;
+	height:330px;
+	background:#497271;
+	border-radius:3px;
+	cursor:pointer;
+	box-shadow:6px 6px 10px rgba(0,0,0,0.8);
+	transition:0.3s all;
+	overflow:hidden;
+	margin:50px;
+	border:3px #FFFFFF solid;
+}
+.card:hover{
+	box-shadow:4px 4px 10px rgba(255,255,255,0.5);
+}
+.img{
+	position:absolute;
+	width:100%;
+	height:300px;
+	overflow:hidden;
+	top:0;
+	left:0;
+}
+.img img{
+	width:100%;
+	height:100%;
+	transition:all 0.5s;
+}
+.card:hover .img img{
+	transform:scale(1.2);
+	filter:blur(1px);
+}
+.content{
+	position: absolute;
+	bottom: -200px;
+	width: 100%;
+	transition: 0.5s;
+	background: #497271;
+	height: 240px;
+	left: 0px;
+}
+.card:hover .content{
+	bottom:0px;
+}
+.content h2{
+	color:#FFF;
+	text-align:center;
+	line-height:45px;
+}
+.content p{
+	padding:0 30px;
+	font-family:"宋体";
+	font-size:14px;
+	color:#FFF;
+	margin:10px;
+	font-weight:700;
+}

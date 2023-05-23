@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 650px;
+    height: 340px;
+}
+
+body {
+    /* background-color: blue; */
+    /* 背景 */
+    background: url(./img/huanghe4.jpg) no-repeat;
+    background-position: center;
+    background-size: 1300px 800px;
+}
+
+
+/* ul的设置 */
+
+
+/* 百叶窗效果的实现   主要在于hover的属性 当鼠标放上时改变 定义鼠标滑过之前和滑过之后 */
+
+.box {
+    width: 1000px;
+    height: 340px;
+    margin: 50px auto;
+    border: 2px solid #FFF;
+    overflow: hidden;
+    /*  溢出隐藏，使效果更加美观*/
+    background-color: rgba(255, 255, 255, 0.3);
+    /*  rgba可以定义颜色的透明度，括号内0.5是用来定义透明度的*/
+    box-shadow: 5px 5px 7px rgba(255, 255, 255, 0.5);
+    /*用来定义盒子的阴影属性 */
+}
+
+.box li {
+    float: left;
+    position: relative;
+    width: 200px;
+    height: 370px;
+    box-shadow: 0 0 25px #000000;
+    transition: all 0.5s;
+    /* 让百叶窗的效果更加平滑自然 */
+}
+
+.box li .text {
+    position: absolute;
+    /* 绝对定位 文字与图片紧密结合在一起 */
+    left: 0;
+    bottom: 0;
+    font-size: 16px;
+    color: #FFF;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    /*  使文本水平居中 */
+    line-height: 30px;
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* hover属性 */
+
+.box:hover li {
+    width: 125px;
+    /* 聚焦后改变其子元素  */
+}
+
+.box li:hover {
+    width: 500px;
+}
+
+
+/* 百叶窗的结束 */
+
+
+/* start的波纹效果 */
+
+.start {
+    font-size: 25px;
+    color: #FFF;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.6), /*  start的背景渐变色 */
+    rgba(255, 255, 255, 0.1));
+    /*background-color:#497271;*/
+    border-radius: 10px;
+    /*  设置边框*/
+    height: 20px;
+    line-height: 20px;
+    width: 55px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 4px;
+    position: relative;
+    top: 508px;
+    left: -7px;
+}
+
+.start a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.mask {
+    position: absolute;
+    display: block;
+    /*  使其变为块级元素 独占一行  设置宽高 */
+    height: 0;
+    background-color: #FFF;
+    opacity: 1;
+    /*  元素透明度*/
+    width: 0;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+}
+
+.start:hover .mask {
+    animation-name: animation;
+    /*  简写属性*/
+    animation-duration: 1s;
+    /*  动画持续时间 */
+}
+
+@Keyframes animation {
+    from {
+        width: 1px;
+        height: 1px;
+        transform: scale(0);
+        opacity: 1;
+    }
+    to {
+        width: 1px;
+        height: 1px;
+        transform: scale(100);
+        opacity: 0;
+    }
+}
